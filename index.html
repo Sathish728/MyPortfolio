@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SATHISH - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Sora', sans-serif;
+        }
+        
+        .noise-bg {
+            background-image: url("https://firebasestorage.googleapis.com/v0/b/webgen-39204.firebasestorage.app/o/noise2.png?alt=media&token=5809def4-08b2-4a93-955d-316736f84b5d");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        
+        .dot-pattern {
+            background-image: 
+                radial-gradient(rgba(255, 255, 255, 0.301) 0.1px, transparent 0px),
+                radial-gradient(rgba(255, 255, 255, 0.301) 0.1px, transparent 0px),
+                radial-gradient(rgba(255, 255, 255, 0.301) 0.1px, transparent 0px),
+                radial-gradient(rgba(255, 255, 255, 0.301) 0.1px, transparent 0px),
+                radial-gradient(rgba(255, 255, 255, 0.301) 0.1px, transparent 0px),
+                radial-gradient(rgba(255, 255, 255, 0.301) 0.1px, transparent 0px),
+                radial-gradient(rgba(255, 255, 255, 0.301) 0.1px, transparent 0px),
+                radial-gradient(rgba(255, 255, 255, 0.301) 0.1px, transparent 0px);
+            background-position: 5% 0, 18% 0, 31% 0, 44% 0, 57% 0, 70% 0, 83% 0, 96% 0;
+            background-size: 0.4px 7px;
+            background-repeat: repeat-y;
+            background-attachment: fixed;
+        }
+        
+        
+        .highlight-color {
+            color: #c8f31d;
+        }
+        
+        .border-hover:hover .border-animate {
+            opacity: 1;
+        }
+        
+        .border-animate {
+            opacity: 0;
+            transition: opacity 1s ease;
+        }
+        
+        .gradient-button {
+            background: linear-gradient(to right, #c8f31d 50%, #1e1e1e 50%);
+            background-size: 200% 100%;
+            background-position: right bottom;
+            transition: all 0.4s ease-out;
+        }
+        
+        .gradient-button:hover {
+            background-position: left bottom;
+            color: #000;
+        }
+    </style>
+</head>
+<body class="bg-gray-800 text-white overflow-x-hidden">
+    <!-- Background Layers -->
+    <div class="fixed inset-0 noise-bg bg-gray-800 z-0"></div>
+    <div class="fixed inset-0 dot-pattern z-10"></div>
+    
+    <!-- Main Content -->
+    <div class="relative z-20 min-h-screen flex flex-col items-center w-full max-w-6xl mx-auto px-4">
+        
+        <!-- Section 1: Hero -->
+        <section class="w-full min-h-screen flex items-center justify-center py-16">
+            <div class="relative w-full">
+                <div class="folder-tab-left"></div>
+                <div class="bg-gray-900 rounded-t-3xl rounded-br-3xl p-8 md:p-12">
+                    <div class="flex flex-col lg:flex-row items-center gap-8">
+                        <!-- Profile Card -->
+                        <div class="w-full lg:w-1/3 bg-gray-900 border border-gray-600 rounded-xl p-6 flex flex-col items-center gap-4">
+                            <img src="https://firebasestorage.googleapis.com/v0/b/webgen-39204.firebasestorage.app/o/profile.jpg?alt=media&token=e4c1a35a-c523-4710-9995-019cfd0987f7" 
+                                 alt="Profile" class="w-full rounded-lg">
+                            <h1 class="text-2xl font-bold">SATHISH</h1>
+                            <h4 class="text-sm text-gray-400">AVAILABLE FOR FREELANCE</h4>
+                            <div class="flex gap-4">
+                                <i class="fab fa-github p-3 border border-gray-600 rounded-lg hover:bg-gray-700 cursor-pointer"></i>
+                                <i class="fab fa-linkedin p-3 border border-gray-600 rounded-lg hover:bg-gray-700 cursor-pointer"></i>
+                                <i class="fab fa-twitter p-3 border border-gray-600 rounded-lg hover:bg-gray-700 cursor-pointer"></i>
+                                <i class="fab fa-instagram p-3 border border-gray-600 rounded-lg hover:bg-gray-700 cursor-pointer"></i>
+                            </div>
+                        </div>
+                        
+                        <!-- Main Content -->
+                        <div class="w-full lg:w-2/3 px-6">
+                            <div class="text-left mb-8">
+                                <p class="text-4xl md:text-6xl leading-tight">
+                                    Hello, I'm <span class="highlight-color">SATHISH</span>, Front-end and Back-end Developer Based in India.
+                                </p>
+                            </div>
+                            <div class="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12">
+                                <div class="flex items-center gap-4">
+                                    <h1 class="text-5xl md:text-7xl font-bold">4</h1>
+                                    <p class="text-lg"><span class="text-5xl md:text-7xl font-bold">Y</span>ears of Experience</p>
+                                </div>
+                                <div class="flex items-center gap-4">
+                                    <h1 class="text-5xl md:text-7xl font-bold">6</h1>
+                                    <p class="text-lg"><span class="text-5xl md:text-7xl font-bold">C</span>lients Worldwide</p>
+                                </div>
+                                <div class="border border-white px-6 py-3 rounded-lg hover:bg-white hover:text-black transition-all cursor-pointer">
+                                    <h5 class="font-semibold">Download C.V</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Services -->
+        <section class="w-full min-h-screen flex items-center justify-center py-16">
+            <div class="relative w-full">
+                <div class="folder-tab-right"></div>
+                <div class="bg-gray-900 rounded-tl-3xl p-8 md:p-12 -mt-10">
+                    <div class="text-center mb-12">
+                        <p class="text-sm text-gray-400 mb-2">OUR SERVICES</p>
+                        <h1 class="text-4xl font-bold mb-2">Turn Information</h1>
+                        <h1 class="text-4xl font-bold"><span class="highlight-color">Into Actionable</span> Insights</h1>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="border-hover bg-gray-800 border border-gray-600 rounded-xl p-6 transition-all hover:shadow-lg">
+                            <img src="https://firebasestorage.googleapis.com/v0/b/webgen-39204.firebasestorage.app/o/serve1.png?alt=media&token=49fdc2e9-8ce3-4466-bb1e-49836dd28033" 
+                                 alt="UI/UX" class="w-12 h-12 mb-4">
+                            <h3 class="text-xl font-bold mb-3">UI / UX DESIGN</h3>
+                            <p class="text-gray-400 mb-8">There are many variations of passages of available but to the majority have suffered but the into majority.</p>
+                            <div class="border-animate w-full h-0.5 bg-gradient-to-r from-lime-400 to-transparent"></div>
+                        </div>
+                        
+                        <div class="border-hover bg-gray-800 border border-gray-600 rounded-xl p-6 transition-all hover:shadow-lg">
+                            <img src="https://firebasestorage.googleapis.com/v0/b/webgen-39204.firebasestorage.app/o/serve2.png?alt=media&token=6ddda6ef-10e0-427a-a77a-a9b9e302111c" 
+                                 alt="Frontend" class="w-12 h-12 mb-4">
+                            <h3 class="text-xl font-bold mb-3">FRONT-END DEVELOPMENT</h3>
+                            <p class="text-gray-400 mb-8">From responsive layouts to interactive interfaces, front-end development brings designs to life using clean and efficient code.</p>
+                            <div class="border-animate w-full h-0.5 bg-gradient-to-r from-lime-400 to-transparent"></div>
+                        </div>
+                        
+                        <div class="border-hover bg-gray-800 border border-gray-600 rounded-xl p-6 transition-all hover:shadow-lg">
+                            <img src="https://firebasestorage.googleapis.com/v0/b/webgen-39204.firebasestorage.app/o/serve3.png?alt=media&token=670f4852-3741-40f3-a6ab-9af318494a85" 
+                                 alt="Backend" class="w-12 h-12 mb-4">
+                            <h3 class="text-xl font-bold mb-3">BACK-END DEVELOPMENT</h3>
+                            <p class="text-gray-400 mb-8">Behind every seamless experience lies robust logic, databases, and servers powering the functionality users rely on every day.</p>
+                            <div class="border-animate w-full h-0.5 bg-gradient-to-r from-lime-400 to-transparent"></div>
+                        </div>
+                        
+                        <div class="border-hover bg-gray-800 border border-gray-600 rounded-xl p-6 transition-all hover:shadow-lg">
+                            <img src="https://firebasestorage.googleapis.com/v0/b/webgen-39204.firebasestorage.app/o/serve4.png?alt=media&token=45cbf9fa-d6f1-4e5b-9d4b-3f2086a0669e" 
+                                 alt="Branding" class="w-12 h-12 mb-4">
+                            <h3 class="text-xl font-bold mb-3">BRAND IDENTITY</h3>
+                            <p class="text-gray-400 mb-8">Crafting unique logos, color palettes, and typography to ensure your brand stands out and leaves a lasting impression.</p>
+                            <div class="border-animate w-full h-0.5 bg-gradient-to-r from-lime-400 to-transparent"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Skills -->
+        <section class="w-full min-h-screen flex items-center justify-center py-16">
+            <div class="w-full">
+                <div class="bg-gray-900 p-8 md:p-12">
+                    <div class="flex flex-col lg:flex-row gap-12">
+                        <div class="lg:w-1/2">
+                            <div class="mb-12">
+                                <p class="text-sm text-gray-400 mb-2">OUR SKILLS</p>
+                                <h1 class="text-4xl font-bold mb-2">Turn Information</h1>
+                                <h1 class="text-4xl font-bold"><span class="highlight-color">Into Actionable</span> Insights</h1>
+                            </div>
+                            
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div class="bg-gray-800 border border-gray-600 rounded-xl p-6 flex items-center gap-4">
+                                    <img src="https://firebasestorage.googleapis.com/v0/b/webgen-39204.firebasestorage.app/o/s1.png?alt=media&token=c5857c0f-9fd5-4ab5-843d-971491a96835" 
+                                         alt="UI/UX" class="w-10 h-10">
+                                    <h3 class="text-lg font-semibold">UI/UX DESIGN</h3>
+                                    <div class="flex-1 h-0.5 bg-white ml-4"></div>
+                                </div>
+                                
+                                <div class="bg-gray-800 border border-gray-600 rounded-xl p-6 flex items-center gap-4">
+                                    <img src="https://firebasestorage.googleapis.com/v0/b/webgen-39204.firebasestorage.app/o/s1.png?alt=media&token=c5857c0f-9fd5-4ab5-843d-971491a96835" 
+                                         alt="Web Dev" class="w-10 h-10">
+                                    <h3 class="text-lg font-semibold">Web Development</h3>
+                                    <div class="flex-1 h-0.5 bg-white ml-4"></div>
+                                </div>
+                                
+                                <div class="bg-gray-800 border border-gray-600 rounded-xl p-6 flex items-center gap-4">
+                                    <img src="https://firebasestorage.googleapis.com/v0/b/webgen-39204.firebasestorage.app/o/s5.png?alt=media&token=bff34887-ba37-4afb-a146-c96911e3e0e0" 
+                                         alt="Bubble" class="w-10 h-10">
+                                    <h3 class="text-lg font-semibold">Bubble.io</h3>
+                                    <div class="flex-1 h-0.5 bg-white ml-4"></div>
+                                </div>
+                                
+                                <div class="bg-gray-800 border border-gray-600 rounded-xl p-6 flex items-center gap-4">
+                                    <img src="https://firebasestorage.googleapis.com/v0/b/webgen-39204.firebasestorage.app/o/s4.png?alt=media&token=11344559-63e8-4dae-b358-8af51f1419c2" 
+                                         alt="WordPress" class="w-10 h-10">
+                                    <h3 class="text-lg font-semibold">WordPress</h3>
+                                    <div class="flex-1 h-0.5 bg-white ml-4"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="lg:w-1/2">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div class="bg-gray-800 rounded-xl p-8 pt-20">
+                                    <img src="https://firebasestorage.googleapis.com/v0/b/webgen-39204.firebasestorage.app/o/asset1.png?alt=media&token=e490b690-1ccf-418c-b579-2ccb4daea066" 
+                                         alt="Award" class="w-12 h-12 mb-4">
+                                    <h3 class="text-xl font-bold">02x Designer Award</h3>
+                                    <h4 class="text-gray-400 text-sm">NOMINEE</h4>
+                                </div>
+                                
+                                <div class="bg-gray-800 rounded-xl p-8 pt-20">
+                                    <img src="https://firebasestorage.googleapis.com/v0/b/webgen-39204.firebasestorage.app/o/asset2.png?alt=media&token=6e22c3f4-ad2e-4332-b110-63dcf8afff57" 
+                                         alt="Award" class="w-12 h-12 mb-4">
+                                    <h3 class="text-xl font-bold">02x Designer Award</h3>
+                                    <h4 class="text-gray-400 text-sm">NOMINEE</h4>
+                                </div>
+                                
+                                <div class="bg-gray-800 rounded-xl p-8 pt-20 md:col-span-2">
+                                    <img src="https://firebasestorage.googleapis.com/v0/b/webgen-39204.firebasestorage.app/o/asset3.png?alt=media&token=75de5573-1c6d-4113-9a8c-37a8496748b0" 
+                                         alt="Award" class="w-12 h-12 mb-4">
+                                    <h3 class="text-xl font-bold">02x Designer Award</h3>
+                                    <h4 class="text-gray-400 text-sm">NOMINEE</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Portfolio -->
+        <section class="w-full min-h-screen flex items-center justify-center py-16">
+            <div class="w-full">
+                <div class="bg-gray-900 p-8 md:p-12">
+                    <div class="text-left mb-12 ml-12">
+                        <p class="text-sm text-gray-400 mb-2">OUR PORTFOLIO</p>
+                        <h1 class="text-4xl font-bold">Look at my work & give us <span class="highlight-color">your feedback</span></h1>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="group cursor-pointer">
+                            <img src="https://firebasestorage.googleapis.com/v0/b/webgen-39204.firebasestorage.app/o/portfolio1.jpg?alt=media&token=e112b988-6210-4a12-9efb-a975f06cc869" 
+                                 alt="Portfolio 1" class="w-full h-80 object-cover rounded-xl group-hover:border group-hover:border-lime-400 transition-all duration-700">
+                            <div class="mt-4">
+                                <span class="inline-block bg-transparent border border-gray-400 text-xs px-3 py-1 rounded-full group-hover:bg-lime-400 group-hover:text-black transition-all">Branding</span>
+                                <p class="text-gray-400 mt-2">GeekFolio Portfolio</p>
+                            </div>
+                        </div>
+                        
+                        <div class="group cursor-pointer">
+                            <img src="https://firebasestorage.googleapis.com/v0/b/webgen-39204.firebasestorage.app/o/portfolio2.jpg?alt=media&token=e165437c-b4d6-41fd-8d84-d77ca4be6f15" 
+                                 alt="Portfolio 2" class="w-full h-80 object-cover rounded-xl group-hover:border group-hover:border-lime-400 transition-all duration-700">
+                            <div class="mt-4">
+                                <span class="inline-block bg-transparent border border-gray-400 text-xs px-3 py-1 rounded-full group-hover:bg-lime-400 group-hover:text-black transition-all">Branding</span>
+                                <p class="text-gray-400 mt-2">GeekFolio Portfolio</p>
+                            </div>
+                        </div>
+                        
+                        <div class="group cursor-pointer">
+                            <img src="https://firebasestorage.googleapis.com/v0/b/webgen-39204.firebasestorage.app/o/portfolio3.jpg?alt=media&token=e8ee9932-0881-4e08-bccc-6f422da9d9ad" 
+                                 alt="Portfolio 3" class="w-full h-80 object-cover rounded-xl group-hover:border group-hover:border-lime-400 transition-all duration-700">
+                            <div class="mt-4">
+                                <span class="inline-block bg-transparent border border-gray-400 text-xs px-3 py-1 rounded-full group-hover:bg-lime-400 group-hover:text-black transition-all">Branding</span>
+                                <p class="text-gray-400 mt-2">GeekFolio Portfolio</p>
+                            </div>
+                        </div>
+                        
+                        <div class="group cursor-pointer">
+                            <img src="https://firebasestorage.googleapis.com/v0/b/webgen-39204.firebasestorage.app/o/portfolio4.jpg?alt=media&token=e1d98e18-7892-4de8-9b68-699987652cf4" 
+                                 alt="Portfolio 4" class="w-full h-80 object-cover rounded-xl group-hover:border group-hover:border-lime-400 transition-all duration-700">
+                            <div class="mt-4">
+                                <span class="inline-block bg-transparent border border-gray-400 text-xs px-3 py-1 rounded-full group-hover:bg-lime-400 group-hover:text-black transition-all">Branding</span>
+                                <p class="text-gray-400 mt-2">GeekFolio Portfolio</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Contact -->
+        <section class="w-full min-h-screen flex items-center justify-center py-16">
+            <div class="w-full">
+                <div class="bg-gray-900 p-8 md:p-12">
+                    <div class="flex flex-col lg:flex-row gap-12">
+                        <div class="lg:w-1/2">
+                            <p class="text-sm text-gray-400 mb-2">GET IN TOUCH</p>
+                            <h1 class="text-4xl font-bold mb-4">Let's make your brand brilliant!</h1>
+                            <p class="text-gray-400 mb-8">If you would like to work with us or just want to get in touch, we'd love to hear from you!</p>
+                            <h1 class="text-4xl font-bold highlight-color">+91 9444879827</h1>
+                        </div>
+                        
+                        <div class="lg:w-1/2">
+                            <form action="https://formspree.io/f/xblgpdga" method="POST" class="space-y-6">
+                                <div class="flex flex-col md:flex-row gap-4">
+                                    <input type="text" placeholder="Name" required 
+                                           class="flex-1 bg-transparent border border-gray-400 rounded-md px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-white">
+                                    <input type="email" placeholder="Email" required 
+                                           class="flex-1 bg-transparent border border-gray-400 rounded-md px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-white">
+                                </div>
+                                <input type="text" placeholder="Subject" required 
+                                       class="w-full bg-transparent border border-gray-400 rounded-md px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-white">
+                                <textarea placeholder="Message" required rows="4" 
+                                          class="w-full bg-transparent border border-gray-400 rounded-md px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-white resize-none"></textarea>
+                                <button type="submit" 
+                                        class="gradient-button text-white font-bold py-3 px-6 rounded-md border border-gray-300 border-l-4 border-l-lime-400">
+                                    SEND A MESSAGE
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
